@@ -1,0 +1,39 @@
+{% load static %} 
+<div class="flexslider js-fullheight">
+    <ul class="slides">
+        <li style="background-image: url('{% static 'images/h2_img.jpeg' %}');">
+           <div class="overlay"></div>
+           <div class="container-fluid">
+               <div class="row">
+                   <div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+                       <div class="slider-text-inner js-fullheight">
+                           <div class="desc">
+                               <h1 id="name">Hi! {{student.name}}</h1>
+                               <!-- <h2>100% html5 bootstrap templates Made by <a href="https://colorlib.com/" target="_blank">colorlib.com</a></h2> -->
+                                <p><a class="btn btn-primary btn-learn">Download CV <i class="icon-download4"></i></a></p>
+                            </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </li>
+       <li style="background-image: url('{% static 'images/h1_img.jpeg' %}'); opacity: 0.3;">
+        <div class="overlay"></div>
+           <div class="container-fluid">
+               <div class="row">
+                   <div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+                       <div class="slider-text-inner">
+                           <div class="desc">
+                               <h1>I am <br>{{student.current_role_name}}</h1>
+                                <!-- <h2>100% html5 bootstrap templates Made by <a href="https://colorlib.com/" target="_blank">colorlib.com</a></h2> -->
+                                <!-- <p><a class="btn btn-primary btn-learn">View Portfolio <i class="icon-briefcase3"></i></a></p> -->
+                                <p><a class="btn btn-primary btn-learn" style="border-width: 2px; font-weight: bold;">View Portfolio <i class="icon-briefcase3"></i></a></p>
+
+                            </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </li>
+      </ul>
+  </div>

@@ -1,0 +1,25 @@
+{% load static %} <!-- Add this line at the beginning -->
+
+<div class="colorlib-narrow-content">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+            <span class="heading-meta">What I do?</span>
+            <h2 class="colorlib-heading">Here are some of my expertise</h2>
+        </div>
+    </div>
+    <div class="row row-pt-md">
+        {% for expertise_area in student.expertise_areas %}
+        <div class="col-md-4 text-center animate-box">
+            <div class="services color-{{ forloop.counter }}">
+                <span class="icon">
+                    <i class="icon-bulb"></i>
+                </span>
+                <div class="desc">
+                    <h3>{{ expertise_area.name }}</h3>
+                    <p>{{ expertise_area.description }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

@@ -1,0 +1,89 @@
+{% extends 'base_template.html' %}
+{% load static %} <!-- Add this line at the beginning -->
+
+{% block content %}
+<div id="colorlib-page">
+    <div class="container-wrap">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+		<div id="aside-container">
+            {% include 'aside_section.html' %}
+
+      </div>
+		<div id="colorlib-main">
+
+
+    <section id="colorlib-hero" class="js-fullheight" data-section="home">
+        {% include 'hero_section.html' %}
+    </section>
+
+    <section class="colorlib-about" data-section="about">
+        {% include 'about_section.html' %}
+    
+    </section>
+
+    <section class="colorlib-services" data-section="services">
+        {% include 'services_section.html' %}
+    </section>
+    
+    <!-- <div id="colorlib-counter" class="colorlib-counters" style="background-image: url('{% static 'images/cover_bg_1.jpg' %}');" data-stellar-background-ratio="0.5">
+        <div class="overlay"></div>
+        <div class="colorlib-narrow-content">
+            <div class="row">
+            </div>
+            <div class="row">
+                <div class="col-md-3 text-center animate-box">
+                    <span class="colorlib-counter js-counter" data-from="0" data-to="309" data-speed="5000" data-refresh-interval="50"></span>
+                    <span class="colorlib-counter-label">Cups of coffee</span>
+                </div>
+                <div class="col-md-3 text-center animate-box">
+                    <span class="colorlib-counter js-counter" data-from="0" data-to="356" data-speed="5000" data-refresh-interval="50"></span>
+                    <span class="colorlib-counter-label">Projects</span>
+                </div>
+                <div class="col-md-3 text-center animate-box">
+                    <span class="colorlib-counter js-counter" data-from="0" data-to="30" data-speed="5000" data-refresh-interval="50"></span>
+                    <span class="colorlib-counter-label">Clients</span>
+                </div>
+                <div class="col-md-3 text-center animate-box">
+                    <span class="colorlib-counter js-counter" data-from="0" data-to="10" data-speed="5000" data-refresh-interval="50"></span>
+                    <span class="colorlib-counter-label">Partners</span>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <section class="colorlib-skills" data-section="skills">
+        {% include 'skills_section.html' %}
+    
+    </section>
+
+    <section class="colorlib-education" data-section="education">
+        {% include 'education_section.html' %}
+
+    </section>
+
+    <section class="colorlib-experience" data-section="experience">
+        {% include 'experience_section.html' %}
+    </section>
+
+    <section class="colorlib-work" data-section="work">
+        {% include 'project_section.html' %}
+
+    </section>
+
+    <!-- <section class="colorlib-blog" data-section="blog">
+        {% include 'blog_section.html' %}
+
+    </section> -->
+
+    <section class="colorlib-contact" data-section="contact">
+        {% include 'contact_section.html' %}
+
+    </section>
+    
+</div><!-- end:colorlib-main -->
+</div><!-- end:container-wrap -->
+</div><!-- end:colorlib-page -->
+
+{% endblock %}
+
+

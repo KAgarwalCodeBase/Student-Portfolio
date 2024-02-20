@@ -1,0 +1,30 @@
+{% load static %}
+
+<div class="colorlib-narrow-content">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+            <span class="heading-meta">Experience</span>
+            <h2 class="colorlib-heading animate-box">Work Experience</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="timeline-centered">
+                {% for experience in student.work_experiences %}
+                <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+                    <div class="timeline-entry-inner">
+                        <div class="timeline-icon color-1">
+                            <i class="icon-pen2"></i>
+                        </div>
+                        <div class="timeline-label">
+                            <h2><a href="#">{{ experience.role_name }} at {{ experience.company_name }}</a> <span>{{ experience.start_year }} - {% if experience.ongoing %}Present{% else %}{{ experience.end_year }}{% endif %}</span></h2>
+                            <p>{{ experience.description }}</p>
+                            <p>Country: {{ experience.country }}</p>
+                        </div>
+                    </div>
+                </article>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
